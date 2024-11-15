@@ -5,7 +5,9 @@ import { data } from "../data/data";
 // Return example: ['name1', 'name2', ... , 'nameN']
 
 export function getAsteroidNames(data) {
-  // Your code goes here...
+  let asteroids = data.asteroids.filter(function(asteroid){return asteroid});
+  let asteroidName = asteroids.map(function(asteroid){return asteroid.name});
+  return asteroidName;
 }
 
 
